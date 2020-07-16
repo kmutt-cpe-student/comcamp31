@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description"
+    content="ComCamp ครั้งที่ 31 เป็นค่ายที่เปิดโอกาสให้น้อง ๆ ได้เข้ามาสัมผัสบรรยากาศของการเป็นนักศึกษาวิศวะคอมฯ บางมด มีทั้งการเรียนรู้ และกิจกรรมอีกมากมาย รอน้อง ๆ อยู่ อย่าลืมสมัครกันเข้ามาเยอะ ๆ นะ">
+  <meta name="theme-color" content="#fad457">
+  <meta name="msapplication-navbutton-color" content="#fad457">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#fad457">
+  <!-- FB TWITTER -->
+  <meta property="og:title" content="ComCamp#31">
+  <meta property="og:description"
+    content="ComCamp ครั้งที่ 31 เป็นค่ายที่เปิดโอกาสให้น้อง ๆ ได้เข้ามาสัมผัสบรรยากาศของการเป็นนักศึกษาวิศวะคอมฯ บางมด มีทั้งการเรียนรู้ และกิจกรรมอีกมากมาย รอน้อง ๆ อยู่ อย่าลืมสมัครกันเข้ามาเยอะ ๆ นะ">
+  <meta property="og:image" content="./assets/img/cover.jpg">
+  <meta property="og:url" content="./">
+  <meta property="og:site_name" content="-: ComCamp#31 :-">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="ComCamp#31">
+  <meta name="twitter:site" content="@comcamp_kmutt">
+  <!-- ICONS -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" href="./img/favicon/f16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="./img/favicon/f32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="./img/favicon/f96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="./img/favicon/f128.png" sizes="128x128">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./dist/css/sphynx.css">
+  <link rel="stylesheet" href="./dist/css/index.css">
+  <title>-: ComCamp#31 :-</title>
+</head>
+
+<body style="transition: none !important">
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v3.2'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/th_TH/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar is-top">
+    <a href="javascript:scrollto();" class="logo">
+      <img tabindex="0" src="./img/logo2.png" alt="ComCamp#31 Logo">
+    </a>
+    <div id="mobileNavToggler">
+      <i class="fas fa-bars  is-now-closed"></i>
+      <i class="fas fa-times is-now-opened"></i>
+    </div>
+    <ul class="menu">
+      <li><a href="javascript:scrollto({id:'comcamp_index'});" tabindex="0">About</a></li>
+      <li><a href="javascript:scrollto({id:'learning_index'});" tabindex="0">Learning</a>
+      </li>
+      <li><a href="javascript:scrollto({id:'regis_index'});" tabindex="0">Registration</a>
+      </li>
+      <li><a href="javascript:scrollto({id:'faq_index'});" tabindex="0">FAQs</a></li>
+      <li><a href="javascript:scrollto({id:'contact_index'});" tabindex="0">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="layer __index is-5" id="para5"></div>
+    <div class="layer __index is-4" id="para4"></div>
+    <div class="layer __index is-3" id="para3"></div>
+    <div class="layer __index is-2" id="para2"></div>
+    <div class="layer __index is-1" id="para1"></div>
+    <div class="layer __index is-flex-center has-no-user-select" id="para0">
+      <div class="is-text-center">
+        <img id="nav-logo" class="logo" src="./img/logo2.png" alt="ComCamp#31 Logo">
+        <br><br>
+        <h6 style="color:#222;text-shadow:0 0 4px rgba(255,255,255,.25)">ปิดรับสมัครแล้ว!
+        </h6>
+      </div>
+    </div>
+    <div id="downarr">
+      <a href="javascript:scrollto({id:'comcamp_index'});"><i
+          class="fas fa-chevron-down"></i></a>
+    </div>
+  </div>
+  <!-- WHAT IS COMCAMP -->
+  <div id="comcamp_index" class="container is-fullwidth is-lazy-background">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 is-text-center">
+          <h2 class="has-no-margin">COMCAMP คืออะไร?</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-11">
+          <div class="row">
+            <div class="col-md-6 is-flex-center">
+              <div class="carousel" id="comcampCarousel">
+                <!-- CONTENTS -->
+                <div class="contents">
+                  <div class="slide is-active">
+                    <img class="is-lazy" data-src="./img/cc1.jpg"
+                      alt="ภาพบรรยากาศค่าย ComCamp" style="background:#c9a">
+                  </div>
+                  <div class="slide">
+                    <img class="is-lazy" data-src="./img/cc2.jpg"
+                      alt="ภาพบรรยากาศค่าย ComCamp" style="background:#544">
+                  </div>
+                  <div class="slide">
+                    <img class="is-lazy" data-src="./img/cc3.jpg"
+                      alt="ภาพบรรยากาศค่าย ComCamp" style="background:#866">
+                  </div>
+                  <div class="slide">
+                    <img class="is-lazy" data-src="./img/cc4.jpg"
+                      alt="ภาพบรรยากาศค่าย ComCamp" style="background:#887">
+                  </div>
+                  <div class="slide">
+                    <img class="is-lazy" data-src="./img/cc5.jpg"
+                      alt="ภาพบรรยากาศค่าย ComCamp" style="background:#655">
+                  </div>
+                </div>
+                <!-- CONTROLLER -->
+                <div class="arrow" onclick="indexCarousel.plusSlide(-1)"></div>
+                <div class="arrow is-right" onclick="indexCarousel.plusSlide()"></div>
+                <!-- NAV -->
+                <nav>
+                </nav>
+              </div>
+            </div>
+            <div class="col-md-6" id="comcampContent">
+              ComCamp เป็นค่ายวิศวะคอมฯ <span>ที่เปิดให้</span><span>น้อง ๆ</span> ม.ปลาย
+              <span>สายวิทย์-คณิต</span> <span>ทั่วประเทศ</span>
+              ได้<span>เข้ามา</span>ลองสัมผัสบรรยากาศ<span>ของการเป็นนักศึกษา</span><span>วิศวะคอมฯ
+                บางมด</span> ซึ่งจะจัดขึ้น<span>ทุก ๆ</span> ปี
+              และในปีนี้<span>จัดเป็น</span><span>ครั้งที่ 31 แล้ว</span>
+              โดยจัด<span>ในวันที่ 15 - 19 เมษายน 2562</span> นั่นเอง!!!
+              นอกจากค่ายนี้<span>จะมี</span><span>การเรียน</span><span>การสอน</span>แล้ว
+              <span>ยังมี</span>กิจกรรม<span>สนุก ๆ</span> ทั้ง<span>พี่ ๆ</span> ค่าย
+              และ<span>เพื่อน ๆ</span> ที่น่ารัก<span>รออยู่</span>อีกเพียบ! โดย<span>น้อง
+                ๆ</span> <span>จะได้รับ</span>ทั้งความรู้ มิตรภาพ ประสบการณ์
+              และความสนุกสนาน<span>กลับไป</span>อย่างแน่นอน และที่สำคัญค่ายนี้ ฟรี!!!
+              ตลอดทั้งค่าย <span>เปิดรับสมัคร</span><span>ภายใน</span><span>วันที่ 15
+                กุมภาพันธ์</span> - <span>11 มีนาคม 2562</span>
+              <div class="is-text-center"><b>-:
+                  อย่าลืม<span>มาเป็น</span><span>ส่วนหนึ่ง</span><span>กับพวกเรา</span>
+                  ComCamp#31 :-</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- LEARNING -->
+  <div id="learning_index" class="container is-fullwidth">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 is-text-center">
+          <h2 class="">LEARNING</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 is-text-center">
+          <img class="is-lazy is-responsive" data-src="./img/l1.png" alt="C Programming">
+          <h6>C Programming</h6>
+          <span class="is-nowrap">เรียนรู้พื้นฐานภาษา C</span> <span
+            class="is-nowrap">รากฐานสำคัญ</span><span
+            class="is-nowrap">แห่งโปรแกรมมิ่ง</span><span
+            class="is-nowrap">ที่สร้าง</span>อาณาจักร<span
+            class="is-nowrap">ของเรา</span><span class="is-nowrap">ขึ้นมา</span>
+        </div>
+        <div class="col-md-4 col-sm-6 is-text-center">
+          <img class="is-lazy is-responsive" data-src="./img/l2.png"
+            alt="Microcontroller">
+          <h6>Microcontroller</h6>
+          <span class="is-nowrap">เรียนรู้ความสำคัญ</span><span
+            class="is-nowrap">และการใช้งาน</span> <span
+            class="is-nowrap">Microcontroller</span> <span class="is-nowrap">ด้วยบอร์ด
+            Micro:bit</span> อาวุธสำคัญ<span class="is-nowrap">ของเรา</span><span
+            class="is-nowrap">บนโลกยุคใหม่</span>
+        </div>
+        <div class="col-md-4 col-sm-6 is-offset-sm-3 is-text-center">
+          <img class="is-lazy is-responsive" data-src="./img/l3.png" alt="Web">
+          <h6>Web</h6>
+          <span class="is-nowrap">เรียนรู้การสร้างเว็บไซต์</span><span
+            class="is-nowrap">ของตัวเอง</span><span
+            class="is-nowrap">ให้เก๋ไก๋</span><span
+            class="is-nowrap">ไม่แพ้อาณาจักรอื่น</span> <span class="is-nowrap">ด้วยภาษา
+            HTML,</span> CSS, <span class="is-nowrap">และ JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- REGISTRATION -->
+  <div id="regis_index" class="container is-fullwidth">
+    <div class="container">
+      <div class="row">
+        <h2 class="is-text-center">REGISTRATION</h2>
+      </div>
+      <div class="row is-text-center">
+        <div class="col-md-6 has-no-vertical-padding">
+          <div class="row has-no-vertical-margin">
+            <div class="col-xs-6">
+              <section>
+                <div class="h1">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                กําลังศึกษาอยู่ในระดับชั้นมัธยมศึกษาปีที่ 4–6 สายวิทย์ฯ <span
+                  class="is-nowrap">หรือ ปวช.</span> <span
+                  class="is-nowrap">ฐานวิทยาศาสตร์</span>
+              </section>
+            </div>
+            <div class="col-xs-6">
+              <section>
+                <div class="h1">
+                  <i class="fas fa-laptop"></i>
+                </div>
+                มีความสนใจในด้านคอมพิวเตอร์ <span class="is-nowrap">ไม่จําเป็น</span><span
+                  class="is-nowrap">ต้องมีพื้นฐาน</span>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 has-no-vertical-padding">
+          <div class="row has-no-vertical-margin">
+            <div class="col-xs-6">
+              <section>
+                <div class="h1">
+                  <i class="fas fa-user-check"></i>
+                </div>
+                <span class="is-nowrap">ผู้ปกครอง</span><span
+                  class="is-nowrap">อนุญาต</span><span
+                  class="is-nowrap">ให้นักเรียน</span><span
+                  class="is-nowrap">คนดังกล่าว</span><span
+                  class="is-nowrap">เข้าร่วมกิจกรรม</span>
+              </section>
+            </div>
+            <div class="col-xs-6">
+              <section>
+                <div class="h1">
+                  <i class="fas fa-campground"></i>
+                </div>
+                สามารถเข้าพักในระยะเวลา<span class="is-nowrap">และสถานที่</span><span
+                  class="is-nowrap">ที่กําหนด</span>ได้ตลอดโครงการ
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="margin: 2rem 0">
+      <div class="row">
+        <div class="col-md-3 col-sm-12 col-xs-6">
+          <h3 class="is-text-center is-hidden-md is-hidden-xs">Timeline</h3>
+          <h3 class="is-text-right is-hidden-sm">Timeline</h3>
+        </div>
+        <div class="col-md-9 col-sm-12 col-xs-6">
+          <ul class="skytrain">
+            <li>
+              <div class="del"><del>15 FEB</del></div>
+              <div class="date"><ins>17 FEB</ins></div>
+              <div class="event">เปิดรับสมัคร</div>
+            </li>
+            <li>
+              <div class="del"><del>11 MAR</del></div>
+              <div class="date"><ins>15 MAR</ins></div>
+              <div class="event">ปิดรับสมัคร</div>
+            </li>
+            <li>
+              <div class="date">1 APR</div>
+              <div class="event">ประกาศผล</div>
+            </li>
+            <li class="is-active">
+              <div class="date">15 APR</div>
+              <div class="event">เปิดค่าย</div>
+            </li>
+            <li>
+              <div class="date">19 APR</div>
+              <div class="event">ปิดค่าย</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ -->
+  <div id="faq_index" class="container is-fullwidth">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 is-text-center">
+          <h2 class="">FAQS</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="collapsible">
+            <div class="header"><span class="arrow"></span> เอกสาร ปพ.1 และ ปพ.7
+              ต้องเป็นตัวจริงหรือสำเนาครับ?</div>
+            <div class="body">
+              <div class="content">สามารถส่งตัวจริง
+                หรือสำเนาที่เซ็นรับรองสำเนาถูกต้องก็ได้ครับ</div>
+            </div>
+          </div>
+          <div class="collapsible">
+            <div class="header"><span class="arrow"></span> ส่งเอกสารได้ทางไหนบ้างครับ?
+            </div>
+            <div class="body">
+              <div class="content">ส่งได้ที่
+                โครงการฝึกอบรมเชิงปฏิบัติการคอมพิวเตอร์เบื้องต้น ครั้งที่ 31
+                ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์
+                มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี 126 ถนนประชาอุทิศ แขวงบางมด
+                เขตทุ่งครุ กรุงเทพมหานคร 10140</div>
+            </div>
+          </div>
+          <div class="collapsible">
+            <div class="header"><span class="arrow"></span>
+              ค่ายนี้รับสมัครระดับชั้นใดบ้างคะ?</div>
+            <div class="body">
+              <div class="content">รับน้อง ๆ ที่กำลังศึกษาอยู่ในระดับชั้น ม.ปลาย
+                (สายวิทย์ฯ)
+                หรือประกาศนียบัตรที่กระทรวงศึกษาธิการเทียบเท่าสายวิทยาศาสตร์ครับ</div>
+            </div>
+          </div>
+          <div class="collapsible">
+            <div class="header"><span class="arrow"></span> ไม่ค่อยมีความรู้ด้านนี้เลย
+              แต่สนใจ อยากสมัครได้ไหมคะ?</div>
+            <div class="body">
+              <div class="content">ได้ครับ
+                เพราะค่ายนี้เป็นโครงการที่มีจุดประสงค์เพื่อแนะนำการเรียนการสอน
+                และการปฏิบัติเชิงคอมพิวเตอร์อยู่แล้ว ขอแค่มีคุณสมบัติตามที่ระบุ
+                และมีความสนใจด้านคอมพิวเตอร์ ก็สามารถสมัครได้ครับ</div>
+            </div>
+          </div>
+          <div class="collapsible">
+            <div class="header"><span class="arrow"></span> ต้องสอบเข้าไหมครับ?</div>
+            <div class="body">
+              <div class="content">
+                ไม่ต้องสอบครับ แต่จะมีการคัดเลือกจากการตอบคำถามของน้อง ๆ ในเว็บไซต์ครับ
+              </div>
+            </div>
+          </div>
+          <div class="collapsible">
+            <div class="header"><span class="arrow"></span>
+              ค่ายนี้มีโควตาในการเข้ามหาวิทยาลัยให้ไหมคะ?</div>
+            <div class="body">
+              <div class="content">
+                ค่ายนี้ไม่มีโควตานะครับ เป็นค่ายแนะแนว
+                ถ้าอยากรู้ว่าวิศวกรรมคอมพิวเตอร์เรียนอย่างไร ก็ลองสมัครมาดูนะครับ
+              </div>
+            </div>
+          </div>
+          <div class="collapsible">
+            <div class="header"><span class="arrow"></span> ค่ายนี้จัดที่ไหนคะ?</div>
+            <div class="body">
+              <div class="content">ค่ายนี้จัดขึ้นที่ภาควิชาวิศวกรรมคอมพิวเตอร์
+                อาคารวิศววัฒนะ (ตึกแดง) ชั้น 10 - 11 คณะวิศวกรรมศาสตร์
+                มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรีครับ</div>
+            </div>
+          </div>
+          <div class="collapsible">
+            <div class="header"><span class="arrow"></span>
+              ผู้เข้าร่วมโครงการจะได้พักที่ไหนครับ?</div>
+            <div class="body">
+              <div class="content">น้อง ๆ จะได้พักที่หอพักนักศึกษาชายและหญิง
+                (บ้านธรรมรักษา 1 และ 2) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+                โดยมีนักศึกษาภาควิชาวิศวกรรมคอมพิวเตอร์ดูแลตลอด 24 ชั่วโมงครับ</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CONTACT -->
+  <div id="contact_index" class="container is-fullwidth">
+    <div class="container">
+      <div class="row">
+        <h2 class="is-text-center">CONTACT</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <div>
+            น้อง ๆ สามารถติดตามข่าวสารค่าย หรือสอบถามข้อสงสัยเกี่ยวกับค่าย ComCamp#31
+            ได้ที่ Facebook Fanpage: Comcamp KMUTT ตลอด 24 ชั่วโมง
+          </div>
+          <table class="has-vertical-margin">
+            <tr>
+              <td style="padding:1rem; font-size:2rem; vertical-align: top">
+                <i class="fas fa-phone fa-flip-horizontal"></i>
+              </td>
+              <td>
+                <ul class="is-bulletless has-no-margin">
+                  <li>พี่โอ๊ค 095-521-2999</li>
+                  <li>พี่มิว 097-115-4445</li>
+                  <li>พี่ไอซ์ 061-217-8257</li>
+                  <li>พี่พิมพ์ 095-707-5463</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td style="padding:1rem; font-size:2rem; vertical-align: top">
+                <i class="fas fa-map-marker-alt"></i>
+              </td>
+              <td>
+                ภาควิชาวิศวกรรมคอมพิวเตอร์ <span
+                  class="is-nowrap">คณะวิศวกรรมศาสตร์</span>
+                มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+                ชั้น 10 อาคารวิศววัฒนะ 126 ถนนประชาอุทิศ
+                แขวงบางมด เขตทุ่งครุ กรุงเทพฯ 10140
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-7">
+          <div class="row">
+            <div class="col-sm-6" class="is-text-center">
+              <div class="fb-page" data-href="https://www.facebook.com/KMUTTcomcamp/"
+                data-tabs="timeline" data-height="400" data-small-header="false"
+                data-adapt-container-width="true" data-hide-cover="false"
+                data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/KMUTTcomcamp/"
+                  class="fb-xfbml-parse-ignore"><a
+                    href="https://www.facebook.com/KMUTTcomcamp/">Comcamp KMUTT</a>
+                </blockquote>
+              </div>
+            </div>
+            <div class="col-sm-6" style="text-align:center;">
+              <a class="twitter-timeline" data-width="100%" data-height="400"
+                href="https://twitter.com/comcamp_kmutt">Tweets by comcamp_kmutt</a>
+              <script async src="https://platform.twitter.com/widgets.js"
+                charset="utf-8"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h4>SPONSORED BY</h4>
+        <hr class="has-no-vertical-margin">
+      </div>
+      <div class="row" style="margin-bottom:0">
+        <div class="col-xs-6 col-md-3"><img class="is-responsive" src="./img/s1.png"
+            alt="AIT Professional ICT Solutions"></div>
+        <div class="col-xs-6 col-md-3"> <img class="is-responsive" src="./img/s2.png"
+            alt="NEXTZY Technologies"></div>
+        <div class="col-xs-6 col-md-3"> <img class="is-responsive" src="./img/s3.png"
+            alt="YANNIX"></div>
+        <div class="col-xs-6 col-md-3"> <img class="is-responsive" src="./img/s4.png"
+            alt="โก๋แก่"></div>
+      </div>
+      <div class="row" style="margin-bottom:0;margin-top:0">
+        <div class="col-xs-6 col-md-3"><img class="is-responsive" src="./img/s5.png"
+            alt="บริษัท ท่าอากาศยานไทย จำกัด (มหาชน)"></div>
+        <div class="col-xs-6 col-md-3"> <img class="is-responsive" src="./img/s6.png"
+            alt="ThaiBev"></div>
+        <div class="col-xs-6 col-md-3"> <img class="is-responsive" src="./img/s7.png"
+            alt="eisa by ThaiBev"></div>
+        <div class="col-xs-6 col-md-3"> <img class="is-responsive" src="./img/s8.png"
+            alt="Premium Studio Shop"></div>
+      </div>
+      <div class="row" style="margin-top:0">
+        <div class="col-xs-6 col-md-3"><img class="is-responsive" src="./img/s9.png"
+            alt="BJC"></div>
+        <div class="col-xs-6 col-md-3"> <img class="is-responsive" src="./img/s10.png"
+            alt="Techno Photo"></div>
+        <div class="col-xs-6 col-md-3"> <img class="is-responsive" src="./img/s11.png"
+            alt="มีฤทธิ์เภสัช"></div>
+        <div class="col-xs-6 col-md-3"> <img class="is-responsive" src="./img/s12.png"
+            alt="Premier Marketing"></div>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <footer id="footer_index" class="footer container is-fullwidth is-text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="copyright">Copyright 2019 &copy; ComCamp#31 All Rights Reserved.
+          </div>
+          Designed and developed by CPE#32
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- GO TOP BTN -->
+  <a id="gotop" class="is-hidden"
+    href="javascript:scrollto({force: true});">กลับด้านบน</a>
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="./dist/js/yall-2.2.1.min.js"></script>
+  <script src="./dist/js/index.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+</body>
+
+</html>
